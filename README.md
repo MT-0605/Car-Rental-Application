@@ -27,7 +27,6 @@ A modern, full-stack car rental application built with React, Node.js, Express, 
 - Express.js
 - MongoDB with Mongoose
 - JWT Authentication
-- Passport.js (Google OAuth)
 - Multer (File Upload)
 - bcryptjs (Password Hashing)
 
@@ -35,7 +34,6 @@ A modern, full-stack car rental application built with React, Node.js, Express, 
 
 - Node.js (v18 or higher)
 - MongoDB (local or Atlas)
-- Google OAuth credentials (optional)
 
 ## 🚀 Installation
 
@@ -56,9 +54,6 @@ Create a `.env` file in the backend directory:
 PORT=5000
 MONGO_URI=mongodb://localhost:27017/carrental
 JWT_SECRET=your_jwt_secret_key_here_make_it_long_and_random
-GOOGLE_CLIENT_ID=your_google_client_id_here
-GOOGLE_CLIENT_SECRET=your_google_client_secret_here
-GOOGLE_CALLBACK_URL=http://localhost:5000/api/auth/google/callback
 ```
 
 ### 3. Frontend Setup
@@ -112,8 +107,6 @@ CarRentalMERN/
 ### Authentication
 - `POST /api/auth/signup` - User registration
 - `POST /api/auth/login` - User login
-- `GET /api/auth/google` - Google OAuth
-- `GET /api/auth/google/callback` - Google OAuth callback
 
 ### Cars
 - `GET /api/cars` - Get all cars
